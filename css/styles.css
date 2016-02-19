@@ -25,6 +25,9 @@ nav, .textblock {
     display: table;
     
 }
+.bg-space {
+    background: url('../images/space.jpg') no-repeat;
+}
 .center {
     margin: 0px auto;
     display: table;
