@@ -1,0 +1,139 @@
+body { 
+    font-family: 'Oswald', arial;
+}
+h1 {
+    position: fixed;
+    z-index: 9
+}
+h3 {
+    margin-top: 50%;
+    position: absolute;
+    margin-left: 40%;
+}
+.box {
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin:0px 35%;
+    width:500px;
+    height:500px;
+    border:solid 1px #000; 
+    background:#9be0f7 url('../images/bg2.png');
+    z-index: 2;
+}
+.box-right {
+    width: 100px;
+    height: 500px;
+    position: absolute;
+    margin-left: 501px;
+    z-index: 999;
+    background: #FFF;
+}
+.box-left {
+    position: absolute;
+    left: 0;
+    top:0;
+    width: 60%;
+    height: 510px;
+    margin-left: 0%;
+    z-index: 3;
+    background: #FFF;
+}
+
+.mg {
+    position: absolute;
+    margin: 0px 20%;
+    margin-top: 40%;
+    width: 50px;
+    height: 50px;
+    background: url('../images/alien.png');
+}
+.level-box {
+    display: inline-block;
+    float: right;
+}
+.wall {
+    position: absolute;
+    z-index: -1;
+    width: 100px;
+    margin-left:501px;
+    background-color: limegreen;
+}
+.wall-bottom {
+    bottom: 0px;
+}
+.wrapper {
+    width: 100%;
+    height: 500px;
+}
+.scoreboard {
+    margin: 0px 35%;
+    width: 480px;
+    font-size:2em;
+}
+.scoreboard .score {
+    margin-right: 20px;;
+}   
+.reset {
+    margin: 0px auto;
+    width: 200px;
+    margin-top: 560px;
+    margin-left: 49%;
+    height: 60px;
+    font-size: 2em;
+    color: #FFF;
+    background-color: #d7641d;
+    text-shadow: 0px 1px 0px #d25608;
+    border:solid 1px #d25608;
+    border-radius: 12px;
+}
+.play {
+    position: relative;
+    z-index: 9999;
+    height: 60px;
+    font-size: 2em;
+    color: #FFF;
+    background-color: #d7641d;
+    text-shadow: 0px 1px 0px #d25608;
+    border:solid 1px #d25608;
+    border-radius: 12px;
+    margin: 0px auto;
+    width: 200px;
+    display: table;
+    margin-top: 60%;
+}
+.play:hover, .reset:hover {
+    cursor: pointer;
+}
+.animateup {
+    -webkit-animation: goup 4s linear;
+     -moz-animation: goup 4s linear;
+       -o-animation: goup 4s linear;
+          animation: goup 4s linear;
+}
+.animatedown {
+    -webkit-animation: godown 4s linear;
+     -moz-animation: godown 4s linear;
+       -o-animation: godown 4s linear;
+          animation: godown 4s linear;
+}
+.animateleft {
+    -webkit-animation:goleft 4s linear;
+    animation: goleft 4s linear;
+}
+
+.animateright {
+    -webkit-animation:godown 4s linear;
+    animation: goright 4s linear;
+}
+@keyframes play {
+	100% { background-position: -1900px; }
+}
+
+
+
+
+
+
+
+
