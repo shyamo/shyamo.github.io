@@ -1,0 +1,53 @@
+body {font-size:2em;}
+.footer {
+    position: absolute;
+    bottom: 0;
+    height: 200px;
+    width: 100%;
+    background-color: #f1f1f1;
+}
+.cog-cancel {
+    margin-top: 95px;
+    margin-left: 10px;
+    
+}
+.btnreset {
+    margin-right:10px;
+}
+.btnguess {
+    width: 30%;
+    font-size: 0.9em;
+    border-radius: 0px 12px 12px 0px;
+    float:left;
+}
+.guess-box {
+    font-size: 3em;
+    display: block;
+
+}
+.dashitem {
+    display: inline-block;
+    height: 100px;
+    margin: 0px 10px;
+    border-bottom: solid 2px #989898;
+}
+.txtguess {
+    float: left;
+    width: 70%;
+    border-radius: 12px 0px 0px 12px;
+    border:solid 1px #989898;
+}
+.word-box {
+    margin-top: 40px; 
+    font-size:2.6em;
+    text-transform: uppercase;
+    text-align: center;
+}
+.word-box span {
+    text-align:center;
+}
+
+.word-box span.letter {
+    opacity: 0;
+}
+
