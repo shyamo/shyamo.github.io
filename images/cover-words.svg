@@ -5,12 +5,8 @@
 <style type="text/css">
 	.st0{fill:#2987C0;}
 	.st1{fill:none;}
-	.st2{fill:#FFFFFF;}
-	.st3{font-family:'Aparajita';}
-	.st4{font-size:77px;}
 </style>
 <path class="st0" d="M76,89.2H23c-6.6,0-12-5.4-12-12v-53c0-6.6,5.4-12,12-12h53c6.6,0,12,5.4,12,12v53C88,83.8,82.6,89.2,76,89.2z"
 	/>
-<rect x="19.8" y="29.3" class="st1" width="63.5" height="54.3"/>
-<text transform="matrix(1 0 0 1 19.8336 72.3818)" class="st2 st3 st4">W</text>
+<rect x="12.8" y="22.5" class="st1" width="72.4" height="61.2"/>
 </svg>
