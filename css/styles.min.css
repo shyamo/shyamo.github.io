@@ -190,6 +190,16 @@ section.slackmenu{
     transition: all 300ms ease-in;
     transform: scale(1.2);
 }
+.back {
+    position: absolute;
+    z-index: 1;
+    top: 20px;
+    left: 10px;
+    width: 60px;
+    height: 60px;
+    display: block;
+    background: url(../images/back.svg) no-repeat;
+}
 .github-icon {
     background:url(../images/github-logo.svg) no-repeat;
 }
@@ -230,6 +240,9 @@ section.slackmenu{
     .menu a {
         display: inline-block;
         margin-bottom: 0px;
+    }
+    .back {
+        top: 85px;
     }
     
     
