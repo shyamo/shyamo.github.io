@@ -19,6 +19,7 @@ h2 {
 	font-size: 1em;
 }
 p {
+    font-size:0.6em;
 	padding: 1em 0 0.6em 0;
 }
 section {
@@ -28,6 +29,7 @@ section {
 .labs h2 {
     color:#2887BF;
     font-weight:bold;
+    font-size:2em;
 }
 .bg-space {
     background: url('../images/space.jpg') no-repeat;
@@ -37,7 +39,6 @@ section {
 }
 
 .bg {
-    position: absolute;
     left: 0;
     top:0;
     width: 100%;
@@ -54,7 +55,8 @@ section {
     width: 240px;
 }
 .slackmenu h1,
-.slackmenu h2 {
+.slackmenu h2,
+.slackmenu p{
     color:#e8e8e8;
 }
 .snap {
@@ -63,8 +65,15 @@ section {
 .watch {
     background: url(../images/cover-watch.svg) no-repeat;
 }
+.labs {
+    text-align: center;
+}
+.lab-tiles {
+    margin-top:
+}
 .lab-tile-img {
     width: 100%;
+    margin-bottom: 30px;
     display: block;
     background-size: 50%;
     background-position: 50% 30%;
@@ -72,22 +81,26 @@ section {
 .projects a:hover {
     text-decoration: none;
 }
+.box-area {
+    margin: 0px -15px;
+}
 .projects .box {
-    margin: 2%;
-    width: 95%;
+    margin: 0%;
+    width: 100%;
     min-height: 300px;
-    border: solid 2px #898989;
 }
 .project-name {
     text-align: center;
-    font-size:1.6em;
+    font-size: 1.2em;
+    font-weight: bold;
 }
 .project-title {
-    margin-top: 207px;
+    margin-top: 200px;
+    padding-bottom: 10px;
     width: 100%;
     display: table;
     height: 10%;
-    background-color: #DEDEDE;
+    background-color: #f9f9f9;
 }
 .project-title span,
 .project-tags span.tag{
@@ -195,7 +208,7 @@ section.slackmenu{
         width:300px;
     }
     .lab-tile-img {
-        background-size: 30%;
+        background-size: 25%;
     }
 }
 @media (min-width: 768px) {
@@ -207,6 +220,9 @@ section.slackmenu{
     }
     section {
         padding:2em 0em 5em;
+    }
+    section.projects {
+        padding:2em 0em 2em;
     }
     .projects .row {
         margin-bottom: 20px;
@@ -222,6 +238,8 @@ section.slackmenu{
     .lab-tile-img {
         background-size: 50%;
     }
-        
-
+    .projects .box {
+        margin: 2%;
+        width: 95%;
+    } 
 }
