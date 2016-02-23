@@ -90,6 +90,7 @@ section {
     min-height: 300px;
 }
 .project-name {
+    padding: 20px;
     text-align: center;
     font-size: 1.2em;
     font-weight: bold;
@@ -244,12 +245,16 @@ section.slackmenu{
     .back {
         top: 85px;
     }
+    .projects .box {
+        border: solid 1px #D0D0D0;
+        border-radius: 4px;
+    }
     
     
 }
 @media (min-width: 992px) {
     .lab-tile-img {
-        background-size: 50%;
+        background-size: 40%;
     }
     .projects .box {
         margin: 2%;
