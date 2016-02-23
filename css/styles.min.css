@@ -65,6 +65,9 @@ section {
 .watch {
     background: url(../images/cover-watch.svg) no-repeat;
 }
+.words {
+    background: url(../images/cover-words.svg) no-repeat;
+}
 .labs {
     text-align: center;
 }
