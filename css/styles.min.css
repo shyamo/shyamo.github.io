@@ -30,14 +30,22 @@ section {
     font-weight:bold;
 }
 .bg-space {
+    background: url('../images/space.jpg') no-repeat;
+}
+.bg-space-labs {
+    background: url('../images/mountains.jpg') no-repeat;
+}
+
+.bg {
     position: absolute;
     left: 0;
     top:0;
     width: 100%;
-    background: url('../images/space.jpg') no-repeat;
     background-size: cover;
 }
-.bg-space footer {
+
+.bg-space footer,
+.bg-space-labs footer {
     position: absolute;
     margin: 50px auto 30px;
     display: table;
@@ -49,14 +57,31 @@ section {
 .slackmenu h2 {
     color:#e8e8e8;
 }
-
+.snap {
+    background: url(../images/cover-snap.svg) no-repeat;
+}
+.watch {
+    background: url(../images/cover-watch.svg) no-repeat;
+}
+.lab-tile-img {
+    width: 100%;
+    display: block;
+    background-size: 50%;
+    background-position: 50% 30%;
+}
+.projects a:hover {
+    text-decoration: none;
+}
 .projects .box {
     margin: 2%;
     width: 95%;
     min-height: 300px;
     border: solid 2px #898989;
 }
-
+.project-name {
+    text-align: center;
+    font-size:1.6em;
+}
 .project-title {
     margin-top: 207px;
     width: 100%;
@@ -66,16 +91,17 @@ section {
 }
 .project-title span,
 .project-tags span.tag{
-    margin: 10px;
+    margin: 20px;
     display: inline-block;
     float:left;
     color: #6F6F6F;
     font-size: 0.6em;
-    text-align: justify;
+    text-align: left;
 }
 .project-tags {
     display: block;
     clear:both;
+    margin: 15px;
 }
 .project-tags span.tag {
     padding:5px;
@@ -128,6 +154,9 @@ footer {
 .slackmenu {
     padding-bottom:2em;
 }
+section.slackmenu{
+    border-bottom:none;
+}
 .menu {
     margin-top:60px;
 }
@@ -165,8 +194,11 @@ footer {
     .bg-space footer {
         width:300px;
     }
+    .lab-tile-img {
+        background-size: 30%;
+    }
 }
-@media (min-width: 786px) {
+@media (min-width: 768px) {
     h1 {
 	font-size: 3em;
     }
@@ -184,9 +216,12 @@ footer {
         margin-bottom: 0px;
     }
     
+    
 }
 @media (min-width: 992px) {
-    
+    .lab-tile-img {
+        background-size: 50%;
+    }
         
 
 }
