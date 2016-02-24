@@ -1,0 +1,104 @@
+body { font-family:arial; color:#afafaf; 
+    background-color:#FFF; 
+}
+h1 {
+    text-align:center;
+    font-size:4em;
+    color:#cc181e;
+    text-shadow: 0px 2px 10px #F2C2C2;
+}
+.cloned {
+    margin-left:-202px; 
+    background-color:#000 !important;
+    background: radial-gradient(#000, #2b2b2b, #4a4a4a);
+}
+.cloned-static {
+    position: relative;
+    z-index: 1;
+    background-color: #c6c6c6 !important;
+}
+.cloned-static span {
+    margin-left: 60px;
+    margin-top: -20px;    
+    display: block;
+    font-size: 4em !important;
+}
+.door {
+    width:200px; 
+    height:200px; 
+    float:left;
+    border:solid 1px #a6a6a6; 
+    background-color: #f1f1f1;
+}
+
+.door:hover {
+    cursor:pointer;
+}
+.door span:active {
+    color:#000;
+}
+.door span {
+    padding: 15% 0% 12%;
+    width: 200px;
+    display: block;
+    text-align: center;
+    font-size:8em;
+}
+.door span:hover {
+    color:#FFF;
+}
+.opened {
+    font-size:4em;
+    margin-left:50px;
+}
+.opendoor {
+    
+    -webkit-animation: opendoor 1s ease;   
+    -webkit-animation-fill-mode: forwards; /*freeze animation*/
+    -webkit-transform-style: preserve-3d;
+    animation: opendoor 1s ease;  
+    animation-fill-mode: forwards; /*freeze animation*/
+    transform-style: preserve-3d;
+}
+img {
+    display:none;
+    width:200px;
+    max-height: 200px;
+}
+.msg {
+    position: absolute;
+    z-index: 9999999;
+    display: block;
+    width:100%;
+    height:100%;
+    background-color: #326248;
+    color:#FFF;
+}
+.msg div {
+    margin-top: 20%;
+    text-align: center;
+    font-size: 4em;
+}
+.js-hidden {
+    display:none;
+}
+@-webkit-keyframes opendoor {
+    from {
+         
+        -webkit-transform: perspective(200) rotateY(0deg);
+        -webkit-transform-origin: 0% 0%;
+        -webkit-transition:all 1s ease;
+        transition:perspective(200) rotateY(0deg);
+        transform-origin: 0% 0%;
+        transition:all 1s ease;
+    }
+    to {
+         
+        -webkit-transform: perspective(200) rotateY(90deg); 
+        -webkit-transform-origin: 0% 0%;
+        -webkit-transition:all 1s ease;
+        transform: perspective(200) rotateY(90deg); 
+        transform-origin: 0% 0%;
+        transition:all 1s ease;
+    }
+}
