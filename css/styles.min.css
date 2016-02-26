@@ -74,6 +74,9 @@ section {
 .calendar {
     background: url(../images/cover-calendar.svg) no-repeat;
 }
+.calendar {
+    background: url(../images/cover-whack.svg) no-repeat;
+}
 .labs {
     text-align: center;
 }
