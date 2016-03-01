@@ -125,9 +125,12 @@ section {
     text-align: left;
 }
 .project-tags {
+    position: absolute;
+    bottom: 20px;
+    margin: 15px;
     display: block;
     clear:both;
-    margin: 15px;
+    
 }
 .project-tags span.tag {
     padding:5px;
