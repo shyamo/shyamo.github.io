@@ -77,6 +77,9 @@ section {
 .whack {
     background: url(../images/cover-whack.svg) no-repeat;
 }
+.orbit {
+    background: url(../images/cover-orbit.svg) no-repeat;
+}
 .labs {
     text-align: center;
 }
