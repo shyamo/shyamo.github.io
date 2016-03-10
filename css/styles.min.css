@@ -80,6 +80,9 @@ section {
 .orbit {
     background: url(../images/cover-orbit.svg) no-repeat;
 }
+.pattern {
+    background: url(../images/cover-pattern.svg) no-repeat;
+}
 .labs {
     text-align: center;
 }
