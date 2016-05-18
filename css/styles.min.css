@@ -52,7 +52,7 @@ section {
     display: table;
     left: 0;
     right: 0;
-    width: 240px;
+    width: 260px;
 }
 .slackmenu h1,
 .slackmenu h2,
@@ -234,7 +234,7 @@ section.slackmenu{
         margin: 0px 30px;
     }
     .bg-space footer {
-        width:300px;
+        width:320px;
     }
     .lab-tile-img {
         background-size: 25%;
