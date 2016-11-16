@@ -1,0 +1,52 @@
+.card-image {
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.flickr-logo {
+  width:100%;
+  padding: 0px 30%;
+  margin: 0px auto;
+}
+.js-box {
+  padding: 0px;
+  background-color:#000;
+}
+.js-card {
+  position: relative;
+  z-index: 2;
+}
+.js-card-link {
+  display: block;
+  opacity: 0.7;
+}
+.js-card-link:hover {
+  opacity: 1;
+}
+.name {
+  margin: 15px 0px 0px;
+  font-weight:bold;
+  font-size: 1.6em;
+}
+.overlay {
+  background-color: #000;
+}
+.search-box {
+  z-index: 9;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.text {
+  width: 100%;
+  padding: 5px;
+  border: none;
+  font-size: 4em;
+  margin-bottom: 10px;
+  border-bottom: solid 1px #c3c3c3;
+  background-color: rgba(255, 255, 255, 0.4);
+  text-align: center;
+  text-transform: capitalize;
+  border:solid 5px #FFF;
+}

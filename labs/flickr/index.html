@@ -1,0 +1,38 @@
+<html>
+<head>
+  <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+  <script src="js/handlebars-latest.js"></script>
+  <link type="text/css" rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
+  <link type="text/css" rel="stylesheet" href="css/style.css" />
+  <script src="js/main.js"></script>
+</head>
+<body>
+  <div class="row">
+    <div class='search-box'>
+      <img class='flickr-logo' src='images/flickr.svg' alt='Flickr Logo'/>
+      <input type="text" class="text" placeholder="Search" tabindex="1" /><input type="button" value="Search" class="search" name="search" style="display:none;" />
+
+      <p class="msg">
+        Please note, i am using the Flickr public api, and have no control of the images that appear on the page.
+      </p>
+
+    </div>
+
+    <div class="col-md-12">
+      <div class="js-container">
+      <script id="flickr-template" type="text/x-handlebars-template">
+          {{#items}}
+            <div class='col-md-3 js-box'>
+              <div class='js-card'>
+                <a target='_blank' class='js-card-link overlay' href='{{this.flickrImageHref}}'>
+                  <div class='card-image' style='background-image:url({{this.imageUrl}}); height:{{imageHeight}}'></div>
+                </a>
+              </div>
+            </div>
+          {{/items}}
+      </script>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
