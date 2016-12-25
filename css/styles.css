@@ -5,7 +5,7 @@
     text-decoration: none;
 }
 .labs h2, .menu a, .project-name {
-    font-weight: 700;
+    font-weight: bold;
 }
 @font-face {
     font-family: introcondblack;
@@ -40,6 +40,16 @@ p {
 .bg-space-labs {
     background: url(../images/mountains.jpg) no-repeat;
 }
+.bg-space::before{
+  content: '';
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background-image: linear-gradient(to bottom right,#002f4b,#dc4225);
+	opacity: .6;
+}
 .bg {
     left: 0;
     top: 0;
@@ -52,10 +62,13 @@ p {
     display: table;
     left: 0;
     right: 0;
-    width: 260px;
+    width: 160px;
 }
 .slackmenu h1, .slackmenu h2, .slackmenu p {
     color: #e8e8e8;
+}
+.slackmenu h2 {
+  opacity: 0.4;
 }
 .snap {
     background: url(../images/cover-snap.svg) no-repeat;
@@ -104,22 +117,37 @@ p {
     width: 100%;
     min-height: 300px;
 }
+.project-box {
+  margin:10px 0px;
+}
+.project-title:hover {
+  background-color:#EAEAEA;
+}
+.project-box-link {
+  width: 100%;
+  display: block;
+}
+.project-desc {
+  padding:10px 0px;
+}
 .project-name {
-    padding: 20px;
-    font-size: 1.2em;
+    font-size: 2em;
+    display:block;
 }
 .project-title {
-    margin-top: 200px;
     padding-bottom: 10px;
     width: 100%;
-    display: table;
-    height: 10%;
+    display:block;
     background-color: #f9f9f9;
+    padding:20px;
+}
+.project-title h2 {
+  margin:0px;
+  font-size:1.2em;
+  font-weight:bold;
 }
 .project-tags span.tag, .project-title span {
-    margin: 20px;
-    display: inline-block;
-    float: left;
+    display: block;
     color: #6F6F6F;
     font-size: .6em;
     text-align: left;
@@ -129,12 +157,14 @@ p {
     clear: both;
     margin: 15px;
 }
-.project-tags span.tag {
+span.tag {
+    display: inline-block;
     padding: 5px;
-    margin: 10px 5px;
     border: 2px solid #2887bf;
-    font-size: .4em;
+    font-size: .6em;
     color: #2887bf;
+    margin: 5px 0px 0px 0px;
+    background-color:#F9F9F9;
 }
 .intro {
     text-align: center;
@@ -183,19 +213,25 @@ section.slackmenu {
 .menu {
     margin-top: 60px;
 }
+.menu-back {
+  margin-top: 0px;
+}
 .menu a {
     margin: 0 30px 20px;
     padding: 20px 40px;
     color: #e8e8e8;
     border: 5px solid #e8e8e8;
-    transition: all .2s ease-in;
-    transform: scale(1);
+    /*transition: all .2s ease-in;
+    transform: scale(1);*/
     font-size: .8em;
 }
 .menu a:hover {
     color: #fff;
-    transition: all .3s ease-in;
-    transform: scale(1.2);
+    /*transition: all .3s ease-in;
+    transform: scale(1.2);*/
+}
+a.back {
+  text-decoration: none;
 }
 .back {
     position: absolute;
@@ -204,7 +240,20 @@ section.slackmenu {
     left: 10px;
     width: 60px;
     height: 60px;
-    background: url(../images/back.svg) no-repeat;
+    background-color:#c4c4c4;
+    border-radius:50%;
+    text-decoration: none;
+}
+.back span {
+  margin: 0px auto;
+    display: block;
+    font-size: 1.6em;
+    width: 15px;
+    margin-top: -7px;
+    font-weight: bold;
+    color: #FFF;
+    position: relative;
+    z-index: 0;
 }
 .github-icon {
     background: url(../images/github-logo.svg) no-repeat;
@@ -220,7 +269,7 @@ section.slackmenu {
     margin: 0 30px;
 }
 .bg-space footer {
-    width: 320px;
+    width: 200px;
 }
 .lab-tile-img {
     background-size: 25%}
