@@ -1,6 +1,6 @@
 var app = {
     init: function() {
-        app.tileHeight();
+        //app.tileHeight();
         //app.resize();
     },
     
