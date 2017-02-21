@@ -10,7 +10,7 @@
     "address-3" : "croydon",
     "address-4" : "",
     "postcode" : "se4 5hj",
-    "org" : "kr",
+    "org" : "kr"
   },
   "event" : {
     "title" : "test title",
@@ -23,7 +23,7 @@
     "address-3" : "test address 3",
     "address-4" : "test address 4",
     "postcode" : "post code",
-    "org" : "org",
+    "org" : "org"
   },
   "event" : {
     "title" : "test title 2",
@@ -36,6 +36,6 @@
     "address-3" : "add3",
     "address-4" : "add4",
     "postcode" : "pcode",
-    "org" : "ord test",
+    "org" : "ord test"
   }
 }
