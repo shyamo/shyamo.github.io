@@ -11,7 +11,8 @@
       "address-4" : "",
       "postcode" : "se4 5hj",
       "org" : "Vanza Society",
-      "image" : "http://shyamo.github.io/labs/org-images/society@3x.jpg"
+      "image" : "http://shyamo.github.io/labs/org-images/society@3x.jpg",
+      "mapsUrl" : "https://maps.google.co.uk/?q=HA3+0UH"
     },
     {
       "title" : "title of event 2",
@@ -24,7 +25,8 @@
       "address-4" : "",
       "postcode" : "se4 5hj",
       "org" : "Wanza Samaj",
-      "image" : "http://shyamo.github.io/labs/org-images/samaj@3x.jpg"
+      "image" : "http://shyamo.github.io/labs/org-images/samaj@3x.jpg",
+      "mapsUrl" : "https://maps.google.co.uk/?q=HA3+0UH"
     },
     {
       "title" : "title of event 3",
@@ -37,7 +39,8 @@
       "address-4" : "",
       "postcode" : "se4 5hj",
       "org" : "Wanza Leicester",
-      "image" : "http://shyamo.github.io/labs/org-images/leicester@3x.jpg"
+      "image" : "http://shyamo.github.io/labs/org-images/leicester@3x.jpg",
+      "mapsUrl" : "https://maps.google.co.uk/?q=HA3+0UH"
     },
     {
       "title" : "title of event 4",
@@ -50,7 +53,8 @@
       "address-4" : "",
       "postcode" : "se4 5hj",
       "org" : "Vanza Mandal",
-      "image" : "http://shyamo.github.io/labs/org-images/mandal@3x.jpg"
+      "image" : "http://shyamo.github.io/labs/org-images/mandal@3x.jpg",
+      "mapsUrl" : "https://maps.google.co.uk/?q=HA3+0UH"
     },
     {
       "title" : "title of event 5",
@@ -63,7 +67,8 @@
       "address-4" : "",
       "postcode" : "se4 5hj",
       "org" : "Vanza South London",
-      "image" : "http://shyamo.github.io/labs/org-images/south@3x.jpg"
+      "image" : "http://shyamo.github.io/labs/org-images/south@3x.jpg",
+      "mapsUrl" : "https://maps.google.co.uk/?q=HA3+0UH"
     },
     {
       "title" : "title of event",
@@ -76,7 +81,8 @@
       "address-4" : "",
       "postcode" : "se4 5hj",
       "org" : "Vanza Canada",
-      "image" : "http://shyamo.github.io/labs/org-images/canada@3x.jpg"
+      "image" : "http://shyamo.github.io/labs/org-images/canada@3x.jpg",
+      "mapsUrl" : "https://maps.google.co.uk/?q=HA3+0UH"
     }
   ]
 }
