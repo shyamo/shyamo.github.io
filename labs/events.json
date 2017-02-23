@@ -1,41 +1,76 @@
 {
-  "event" : {
-    "title" : "test title 1",
-    "description" : "",
-    "dt" : "18-03-2017",
-    "start-time" : "10:30",
-    "end-time": "13:30",
-    "address-1" : "winchester Road",
-    "address-2" : "yaya",
-    "address-3" : "croydon",
-    "address-4" : "",
-    "postcode" : "se4 5hj",
-    "org" : "kr"
-  },
-  "event" : {
-    "title" : "test title",
-    "description" : "",
-    "dt" : "17-03-2017",
-    "start-time" : "10:30",
-    "end-time": "13:30",
-    "address-1" : "test address 1",
-    "address-2" : "test address 2",
-    "address-3" : "test address 3",
-    "address-4" : "test address 4",
-    "postcode" : "post code",
-    "org" : "org"
-  },
-  "event" : {
-    "title" : "test title 2",
-    "description" : "test description",
-    "dt" : "19-03-2017",
-    "start-time" : "10:30",
-    "end-time": "13:30",
-    "address-1" : "add1",
-    "address-2" : "add2",
-    "address-3" : "add3",
-    "address-4" : "add4",
-    "postcode" : "pcode",
-    "org" : "ord test"
-  }
+  "event": [
+    {
+      "title" : "title of event 1",
+      "dt" : "18-03-2017",
+      "start-time" : "10:30",
+      "end-time": "13:30",
+      "address-1" : "winchester Road",
+      "address-2" : "yaya",
+      "address-3" : "croydon",
+      "address-4" : "",
+      "postcode" : "se4 5hj",
+      "org" : "vsoc"
+    },
+    {
+      "title" : "title of event 2",
+      "dt" : "19-03-2017",
+      "start-time" : "10:31",
+      "end-time": "13:31",
+      "address-1" : "winchester Road",
+      "address-2" : "yaya",
+      "address-3" : "croydon",
+      "address-4" : "",
+      "postcode" : "se4 5hj",
+      "org" : "vsoc"
+    },
+    {
+      "title" : "title of event 3",
+      "dt" : "20-03-2017",
+      "start-time" : "10:32",
+      "end-time": "13:32",
+      "address-1" : "winchester Road",
+      "address-2" : "yaya",
+      "address-3" : "croydon",
+      "address-4" : "",
+      "postcode" : "se4 5hj",
+      "org" : "vsoc"
+    },
+    {
+      "title" : "title of event 4",
+      "dt" : "21-03-2017",
+      "start-time" : "10:33",
+      "end-time": "13:33",
+      "address-1" : "winchester Road",
+      "address-2" : "yaya",
+      "address-3" : "croydon",
+      "address-4" : "",
+      "postcode" : "se4 5hj",
+      "org" : "vsoc"
+    },
+    {
+      "title" : "title of event 5",
+      "dt" : "22-03-2017",
+      "start-time" : "10:34",
+      "end-time": "13:34",
+      "address-1" : "winchester Road",
+      "address-2" : "yaya",
+      "address-3" : "croydon",
+      "address-4" : "",
+      "postcode" : "se4 5hj",
+      "org" : "vsoc"
+    },
+    {
+      "title" : "title of event",
+      "dt" : "23-03-2017",
+      "start-time" : "10:35",
+      "end-time": "13:35",
+      "address-1" : "winchester Road",
+      "address-2" : "yaya",
+      "address-3" : "croydon",
+      "address-4" : "",
+      "postcode" : "se4 5hj",
+      "org" : "vsoc"
+    }
+  ]
 }
