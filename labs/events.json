@@ -1,7 +1,7 @@
 {
   "event": [
     {
-      "title" : "title of event 1",
+      "title" : "title of event 1 with a lot more text than the other events ok, lorem ipsum",
       "dt" : "18-03-2017",
       "start-time" : "10:30",
       "end-time": "13:30",
