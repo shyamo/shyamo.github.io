@@ -10,8 +10,8 @@
       "address-3" : "croydon",
       "address-4" : "",
       "postcode" : "se4 5hj",
-      "org" : "vsoc",
-      "image" : "https://github.com/shyamo/shyamo.github.io/blob/master/images/space.jpg"
+      "org" : "Vanza Society",
+      "image" : "http://shyamo.github.io/labs/org-images/society@3x.jpg"
     },
     {
       "title" : "title of event 2",
@@ -23,8 +23,8 @@
       "address-3" : "croydon",
       "address-4" : "",
       "postcode" : "se4 5hj",
-      "org" : "vsoc",
-      "image" : "https://github.com/shyamo/shyamo.github.io/blob/master/images/space.jpg"
+      "org" : "Wanza Samaj",
+      "image" : "http://shyamo.github.io/labs/org-images/samaj@3x.jpg"
     },
     {
       "title" : "title of event 3",
@@ -36,8 +36,8 @@
       "address-3" : "croydon",
       "address-4" : "",
       "postcode" : "se4 5hj",
-      "org" : "vsoc",
-      "image" : "https://github.com/shyamo/shyamo.github.io/blob/master/images/space.jpg"
+      "org" : "Wanza Leicester",
+      "image" : "http://shyamo.github.io/labs/org-images/leicester@3x.jpg"
     },
     {
       "title" : "title of event 4",
@@ -49,8 +49,8 @@
       "address-3" : "croydon",
       "address-4" : "",
       "postcode" : "se4 5hj",
-      "org" : "vsoc",
-      "image" : "https://github.com/shyamo/shyamo.github.io/blob/master/images/space.jpg"
+      "org" : "Vanza Mandal",
+      "image" : "http://shyamo.github.io/labs/org-images/mandal@3x.jpg"
     },
     {
       "title" : "title of event 5",
@@ -62,8 +62,8 @@
       "address-3" : "croydon",
       "address-4" : "",
       "postcode" : "se4 5hj",
-      "org" : "vsoc",
-      "image" : "https://github.com/shyamo/shyamo.github.io/blob/master/images/space.jpg"
+      "org" : "Vanza South London",
+      "image" : "http://shyamo.github.io/labs/org-images/south@3x.jpg"
     },
     {
       "title" : "title of event",
@@ -75,8 +75,8 @@
       "address-3" : "croydon",
       "address-4" : "",
       "postcode" : "se4 5hj",
-      "org" : "vsoc",
-      "image" : "https://github.com/shyamo/shyamo.github.io/blob/master/images/space.jpg"
+      "org" : "Vanza Canada",
+      "image" : "http://shyamo.github.io/labs/org-images/canada@3x.jpg"
     }
   ]
 }
