@@ -10,7 +10,8 @@
       "address-3" : "croydon",
       "address-4" : "",
       "postcode" : "se4 5hj",
-      "org" : "vsoc"
+      "org" : "vsoc",
+      "image" : "https://github.com/shyamo/shyamo.github.io/blob/master/images/space.jpg"
     },
     {
       "title" : "title of event 2",
@@ -22,7 +23,8 @@
       "address-3" : "croydon",
       "address-4" : "",
       "postcode" : "se4 5hj",
-      "org" : "vsoc"
+      "org" : "vsoc",
+      "image" : "https://github.com/shyamo/shyamo.github.io/blob/master/images/space.jpg"
     },
     {
       "title" : "title of event 3",
@@ -34,7 +36,8 @@
       "address-3" : "croydon",
       "address-4" : "",
       "postcode" : "se4 5hj",
-      "org" : "vsoc"
+      "org" : "vsoc",
+      "image" : "https://github.com/shyamo/shyamo.github.io/blob/master/images/space.jpg"
     },
     {
       "title" : "title of event 4",
@@ -46,7 +49,8 @@
       "address-3" : "croydon",
       "address-4" : "",
       "postcode" : "se4 5hj",
-      "org" : "vsoc"
+      "org" : "vsoc",
+      "image" : "https://github.com/shyamo/shyamo.github.io/blob/master/images/space.jpg"
     },
     {
       "title" : "title of event 5",
@@ -58,7 +62,8 @@
       "address-3" : "croydon",
       "address-4" : "",
       "postcode" : "se4 5hj",
-      "org" : "vsoc"
+      "org" : "vsoc",
+      "image" : "https://github.com/shyamo/shyamo.github.io/blob/master/images/space.jpg"
     },
     {
       "title" : "title of event",
@@ -70,7 +75,8 @@
       "address-3" : "croydon",
       "address-4" : "",
       "postcode" : "se4 5hj",
-      "org" : "vsoc"
+      "org" : "vsoc",
+      "image" : "https://github.com/shyamo/shyamo.github.io/blob/master/images/space.jpg"
     }
   ]
 }
