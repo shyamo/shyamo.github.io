@@ -1,4 +1,6 @@
 /*Copyright 2017 - Shyam B*/
+React.initializeTouchEvents(true);
+
 var ComSingleComponent = React.createClass({
   render: function(){
     return (
