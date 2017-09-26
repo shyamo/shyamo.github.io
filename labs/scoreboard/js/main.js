@@ -163,7 +163,7 @@ var PlusMinus = React.createClass({
               <div className="add-container">
                 <div className="container">
                   <div className="row">
-                    <input type="text" className="txt txt-addplayer" id="txtNewPlayer" />
+                    <input type="text" className="txt txt-addplayer" id="txtNewPlayer" placeholder="Players name" />
                     <div className="btn-container">
                       <a href="#" className="btn btn-add btn-primary" id="btn-add" onClick={() => self.addNewPlayer()}>add</a>
                     </div>
