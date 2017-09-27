@@ -4,6 +4,10 @@ body {
   -webkit-backface-visibility: hidden;
 	-webkit-perspective: 1000;
 }
+a {
+  text-decoration: none !important;
+  color: #000 !important;
+}
 .actions-container {
   position: sticky !important;
   bottom: 0;
@@ -15,8 +19,12 @@ body {
 .bigscore-wrapper div {
   display:none;
 }
-.bigscore-wrapper div.true {
+.bigscore-wrapper div.true,
+a {
   display:block;
+}
+.btn-delete {
+  color: #d06262 !important;
 }
 .flexbox-container {
   display: flex;
@@ -43,8 +51,11 @@ body {
   border-radius: 4px;
   width: 100%;
   margin: 15px 0px;
+  color: #FFF !important;
 }
-.btn-container {
+.btn-container,
+.btn-player,
+.delete-container ul  {
   width: 100%;
 }
 .player-add {
@@ -67,7 +78,9 @@ body {
   align-items: center;
   justify-content: center;
 }
-.circle:hover {
+.circle:hover,
+.modal-close:hover,
+.sortable li:hover {
   cursor: pointer;
 }
 .circle div {
@@ -109,9 +122,6 @@ body {
   position: absolute;
   right: 5px;
 }
-.modal-close:hover {
-  cursor: pointer;
-}
 .modalbox {
   display: none;
   width: 100%;
@@ -149,11 +159,10 @@ body {
   font-size: 2em;
   right: 30px;
 }
-.delete-container {
-  margin-top: 48px;
-}
-.delete-container ul {
-  width:100%;
+.score-buttons {
+  flex-grow: 1;
+  flex-basis: 100%;
+  display: inline-flex;
 }
 .delete-container .sortable-players li  {
   min-height: auto;
@@ -161,10 +170,8 @@ body {
 .sortable li.selected {
   background-color:#9a9a9a;
 }
-.sortable li:hover {
-  cursor: pointer;
-}
-.sortable-players {
+.sortable-players,
+.delete-container  {
   margin-top: 48px;
 }
 .sortable-players li {
