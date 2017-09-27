@@ -14,6 +14,7 @@ a {
   bottom: 0;
   background-color: #FFF;
   top: 0px;
+  transform: translateY(0px);
 }
 .add-container {
   margin-top: 90px;
