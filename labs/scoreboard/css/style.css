@@ -13,6 +13,7 @@ a {
   position: sticky !important;
   bottom: 0;
   background-color: #FFF;
+  top: 0px;
 }
 .add-container {
   margin-top: 90px;
