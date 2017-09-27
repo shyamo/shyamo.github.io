@@ -1,6 +1,4 @@
 /*Copyright 2017 - Shyam B*/
-React.initializeTouchEvents(true);
-
 var ComSingleComponent = React.createClass({
   render: function(){
     return (
@@ -35,7 +33,7 @@ var PlusMinus = React.createClass({
   getInitialState() {
     var players = [{
       "id": "1",
-      "name": "Player 1",
+      "name": "component 1",
       "idName": "player1",
       "score": 0,
       "selectedClass": "selected",
@@ -43,7 +41,7 @@ var PlusMinus = React.createClass({
       "hide": ""
     }, {
       "id": "2",
-      "name": "Player 2",
+      "name": "component 2",
       "idName": "player2",
       "score": 0,
       "selectedClass": "",
@@ -51,7 +49,7 @@ var PlusMinus = React.createClass({
       "hide": ""
     }, {
       "id": "3",
-      "name": "Player 3",
+      "name": "component 3",
       "idName": "player3",
       "score": 0,
       "selectedClass": "",
@@ -59,7 +57,7 @@ var PlusMinus = React.createClass({
       "hide": ""
     }, {
       "id": "4",
-      "name": "Player 4",
+      "name": "component 4",
       "idName": "player4",
       "score": 0,
       "selectedClass": "",
@@ -92,23 +90,27 @@ var PlusMinus = React.createClass({
       let classList = self.state.players[index].selectedClass;
       classList += ' ' + self.state.players[index].hide;
       return (
-        <li id={self.state.players[index].idName} draggable="true" className={classList}
-        onClick={() => self.playerSelect(self.state.players[index].idName,
-          self.state.players[index].id, self.state.players[index].selectedClass, self.state.players[index].selected)}
-          onTap={() => self.playerSelect(self.state.players[index].idName,
-            self.state.players[index].id, self.state.players[index].selectedClass, self.state.players[index].selected)}>
-          <span className="playername">{self.state.players[index].name}</span> <span className="score-badge">{self.state.players[index].score}</span>
-        </li>
+        <a className="btn-players">
+          <li id={self.state.players[index].idName} draggable="true" className={classList}
+          onClick={() => self.playerSelect(self.state.players[index].idName,
+            self.state.players[index].id, self.state.players[index].selectedClass, self.state.players[index].selected)}
+            ontap={() => self.playerSelect(self.state.players[index].idName,
+              self.state.players[index].id, self.state.players[index].selectedClass, self.state.players[index].selected)}>
+            <span className="playername">{self.state.players[index].name}</span> <span className="score-badge">{self.state.players[index].score}</span>
+          </li>
+        </a>
       );
     });
 
     var buttonTextComponent = buttonText.map(function (item, i) {
       return (
-         <div id={self.state.players[i].idName} className={item.countClass}
-         onClick={() => self.eventButton(item.name, self.state.players[i].id)} onTap={() => self.eventButton(item.name, self.state.players[i].id)}
+        <a className="score-buttons">
+          <div id={self.state.players[i].idName} className={item.countClass}
+         onClick={() => self.eventButton(item.name, self.state.players[i].id)} ontap={() => self.eventButton(item.name, self.state.players[i].id)}
          data-value={item.name}>
           <div className="buttonText">{item.name}</div>
-        </div>
+         </div>
+        </a>
       );
     });
 
@@ -128,14 +130,14 @@ var PlusMinus = React.createClass({
       return (
           <li className={classList}
           onClick={() => self.deletePlayer(self.state.players[i].id)}
-          onTap={() => self.deletePlayer(self.state.players[i].id)}>
+          ontap={() => self.deletePlayer(self.state.players[i].id)}>
             <div className="flexbox-name">
               {self.state.players[i].name}
             </div>
             <div className="flexbox-delete">
-              <a href="#" id={'delete' + self.state.players[i].id} className={self.state.players[i].selectedClass}
+              <a href="#" id={'delete' + self.state.players[i].id} className="btn-delete"
               onClick={() => self.deletePlayer(self.state.players[i].id)}
-              onTap={() => self.deletePlayer(self.state.players[i].id)} role="button">Delete</a>
+              ontap={() => self.deletePlayer(self.state.players[i].id)} role="button">Delete</a>
             </div>
           </li>
       )
@@ -154,7 +156,7 @@ var PlusMinus = React.createClass({
 
               <div className="container">
                 <div className="row">
-                  <div className="modal-close" onClick={() => self.closeModal()} onTap={() => self.closeModal()}>
+                  <div className="modal-close" onClick={() => self.closeModal()} ontap={() => self.closeModal()}>
                     <div className="close">
                       &#10005;
                     </div>
@@ -165,7 +167,7 @@ var PlusMinus = React.createClass({
               <div className="add-container">
                 <div className="container">
                   <div className="row">
-                    <input type="text" className="txt txt-addplayer" id="txtNewPlayer" placeholder="Players name" />
+                    <input type="text" className="txt txt-addplayer" id="txtNewPlayer" />
                     <div className="btn-container">
                       <a href="#" className="btn btn-add btn-primary" id="btn-add" onClick={() => self.addNewPlayer()}>add</a>
                     </div>
@@ -261,6 +263,14 @@ var PlusMinus = React.createClass({
     this.setState({
       score: score
     });
+    this.playerColors();
+  },
+
+  playerColors: function() {
+
+    var json = this.state.players;
+    console.log(json);
+
   },
 
   playerSelect: function(playerId, id, selectedClass, selected) {
