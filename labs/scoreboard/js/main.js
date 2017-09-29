@@ -33,7 +33,7 @@ var PlusMinus = React.createClass({
   getInitialState() {
     var players = [{
       "id": "1",
-      "name": "component 1",
+      "name": "Player 1",
       "idName": "player1",
       "score": 0,
       "selectedClass": "selected",
@@ -41,7 +41,7 @@ var PlusMinus = React.createClass({
       "hide": ""
     }, {
       "id": "2",
-      "name": "component 2",
+      "name": "Player 2",
       "idName": "player2",
       "score": 0,
       "selectedClass": "",
@@ -49,7 +49,7 @@ var PlusMinus = React.createClass({
       "hide": ""
     }, {
       "id": "3",
-      "name": "component 3",
+      "name": "Player 3",
       "idName": "player3",
       "score": 0,
       "selectedClass": "",
@@ -57,7 +57,7 @@ var PlusMinus = React.createClass({
       "hide": ""
     }, {
       "id": "4",
-      "name": "component 4",
+      "name": "Player 4",
       "idName": "player4",
       "score": 0,
       "selectedClass": "",
@@ -169,7 +169,7 @@ var PlusMinus = React.createClass({
                   <div className="row">
                     <input type="text" className="txt txt-addplayer" id="txtNewPlayer" />
                     <div className="btn-container">
-                      <a href="#" className="btn btn-add btn-primary" id="btn-add" onClick={() => self.addNewPlayer()}>add</a>
+                      <a href="#" className="btn btn-add btn-primary" id="btn-add" onClick={() => self.addNewPlayer()}>Add</a>
                     </div>
                   </div>
                 </div>
