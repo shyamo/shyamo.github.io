@@ -7,14 +7,12 @@ body {
 a {
   text-decoration: none !important;
   color: #000 !important;
-  cursor: pointer !important;
 }
 .actions-container {
   position: sticky !important;
   bottom: 0;
+  padding: 5px;
   background-color: #FFF;
-  top: 0px;
-  transform: translateY(0px);
 }
 .add-container {
   margin-top: 90px;
@@ -42,18 +40,18 @@ a {
   text-align: right;
 }
 .bigscore-value {
-  text-align: center;
   display: table;
   margin: 0px auto;
+  text-align: center;
   font-size: 10em;
   color: #c1c1c1;
 }
 .btn {
   display: block;
-  padding: 10px 15px;
-  border-radius: 4px;
   width: 100%;
+  padding: 10px 15px;
   margin: 15px 0px;
+  border-radius: 4px;
   color: #FFF !important;
 }
 .btn-container,
@@ -61,25 +59,29 @@ a {
 .delete-container ul  {
   width: 100%;
 }
+.btn-players {
+  display: flex;
+  flex-direction: column;
+}
 .player-add {
+  float: right;
   margin: 20px 0px;
   border: solid 1px #52d26f;
   background-color: #52d26f;
   color: #FFF;
-  float: right;
 }
 .counter-container {
   display: flex;
 }
 .circle {
   position: relative;
-  border-radius: 10%;
-  border: solid 1px #a7a7a7;
   flex: 1;
   display: flex;
   margin: 10px;
+  border: solid 1px #a7a7a7;
   align-items: center;
   justify-content: center;
+  border-radius: 10%;
 }
 .circle:hover,
 .modal-close:hover,
@@ -87,8 +89,10 @@ a {
   cursor: pointer;
 }
 .circle div {
-  margin: 0px auto;
+  position: relative;
+  z-index: -1;
   display: flex;
+  margin: 0px auto;
   margin-top: 30%;
 }
 .buttonText {
@@ -97,9 +101,9 @@ a {
 .circle a {
   position: absolute;
   display: block;
-  border-radius: 50%;
   width: 100%;
   top: 0;
+  border-radius: 50%;
 }
 .circle::before, .circle a::before {
   content: "";
@@ -111,65 +115,80 @@ a {
 }
 .delete-button {
   position: absolute;
+  display: inline;
+  top: 50px;
+  margin-top: -27px;
+  padding: 0px 25px;
   border: solid 2px #ef7b7b;
   background: #ef7b7b;
   border-radius: 4px;
-  display: inline;
-  margin-top: -27px;
-  padding: 0px 25px;
   color: #FFF;
-  top: 50px
 }
 .modal-close {
-  padding: 20px;
   position: absolute;
   right: 5px;
-  cursor: pointer !important;
+  padding: 20px;
 }
 .modalbox {
+  position: absolute;
+  left: 0;
+  top: 0;
   display: none;
   width: 100%;
   height: 100%;
   background-color: black;
-  position: absolute;
-  left: 0;
-  top: 0;
   z-index: 1;
   opacity: 0.8;
 }
 .modalbox-container {
-  display: none;
-  background-color: #FFF;
-  width: 100%;
-  height: 100%;
   position: absolute;
   left: 10;
-  z-index: 1;
   top: 0;
+  display: none;
+  width: 100%;
+  height: 100%;
+  background-color: #FFF;
+  z-index: 1;
   padding-right: 20px;
 }
 .playername {
+  padding-top: 20px;
   font-size:1.4em;
 }
 .score-badge {
   position: absolute;
-  display: inline-block;
-  float: right;
-  border: solid 1px #e6e6e6;
-  padding: 0px 15px;
-  border-radius: 4px;
-  min-width: 90px;
+  right: 15px;
+  padding: 23px;
+  margin-top: -10px;
+  display: flex;
+  min-width: 100px;
   text-align: center;
   font-size: 2em;
-  right: 30px;
+  flex-direction: column;
+  background-color: #d87a7a;
+  color: #774343;
+}
+.player-rank {
+  position: absolute;
+  background-color: #6fd4d0;
+  right: 100px;
+  top: 0;
+  margin: 0;
+  padding: 32px 15px;
+  height: auto;
+  min-height: auto;
+  min-width: 45px;
+  font-size: 20px;
+  color: #407977;
 }
 .score-buttons {
+  display: inline-flex;
   flex-grow: 1;
   flex-basis: 100%;
-  display: inline-flex;
 }
 .delete-container .sortable-players li  {
   min-height: auto;
+  flex-direction: initial;
 }
 .sortable li.selected {
   background-color:#9a9a9a;
@@ -179,14 +198,13 @@ a {
   margin-top: 48px;
 }
 .sortable-players li {
-  list-style-type: none;
-  padding: 10px;
-  background-color: #d1d3d4;
-  margin-bottom: 10px;
-  border-radius: 4px;
-  min-height: 95px;
   display: flex;
-  align-items: center;
+  margin-bottom: 10px;
+  padding: 10px;
+  list-style-type: none;
+  background-color: #d1d3d4;
+  min-height: 95px;
+  flex-direction: column;
 }
 .sortable-players li.hide,
 .flexbox-container .hide {
@@ -194,9 +212,9 @@ a {
 }
 .txt-addplayer {
   padding: 4px;
+  width: 100%;
   border: solid 1px #888888;
   border-radius: 4px;
-  width: 100%;
   font-size: 2em;
 }
 ul.sortable {
@@ -224,6 +242,6 @@ ul.sortable {
     margin:10px 0px;
   }
   .modal-close {
-    right: 10%
+    right: 25px;
   }
 }
