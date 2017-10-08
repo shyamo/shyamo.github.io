@@ -101,9 +101,11 @@ var PlusMinus = React.createClass({
             self.state.players[index].id, self.state.players[index].selectedClass, self.state.players[index].selected)}
             ontap={() => self.playerSelect(self.state.players[index].idName,
               self.state.players[index].id, self.state.players[index].selectedClass, self.state.players[index].selected)}>
-            <span className="playername">{self.state.players[index].name}</span> <span className="score-badge">
-              <span className="player-rank">{self.state.players[index].rank}</span>
-            {self.state.players[index].score}</span>
+            <span className="playername">{self.state.players[index].name}</span>
+              <span className="score-badge">
+                <span className="player-rank">{self.state.players[index].rank}</span>
+                  <span className="player-score">{self.state.players[index].score}</span>
+              </span>
           </li>
         </a>
       );
@@ -163,11 +165,11 @@ var PlusMinus = React.createClass({
 
               <div className="container">
                 <div className="row">
-                  <div className="modal-close" onClick={() => self.closeModal()} ontap={() => self.closeModal()}>
+                  <a href="#" className="modal-close" onClick={() => self.closeModal()} ontap={() => self.closeModal()}>
                     <div className="close">
                       &#10005;
                     </div>
-                  </div>
+                  </a>
                 </div>
               </div>
 
