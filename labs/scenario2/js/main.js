@@ -12,7 +12,8 @@ var app = {
           "method": "GET",
           "dataType": "jsonp",
           "headers": {
-            "cache-control": "no-cache"
+            "cache-control": "no-cache",
+            "Content-Type" : "application/x-www-form-urlencoded; charset=UTF-8"
           }
         }
 
