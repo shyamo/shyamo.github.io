@@ -10,6 +10,7 @@ var app = {
           "crossDomain": true,
           "url": "https://newsapi.org/v2/top-headlines?country=us&category=business&apiKey=cbc9e8b524c946c6a4c05e9cb9e7d796",
           "method": "GET",
+          "dataType": "jsonp",
           "headers": {
             "cache-control": "no-cache"
           }
