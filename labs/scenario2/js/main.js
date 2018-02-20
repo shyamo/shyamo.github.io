@@ -27,7 +27,7 @@ var app = {
         var feedHtml = '';
         for (var i=0; i<10; i++) {
             $('.item-list-sports').html('');
-            $('.item-list-sports').append('<li><span class="sports-item">'+  +'</li>')
+            //$('.item-list-sports').append('<li><span class="sports-item">'+  +'</li>')
         }
     }
 }
