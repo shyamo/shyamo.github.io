@@ -17,7 +17,7 @@ var app = {
           }
         }
 
-        $.ajax(settings).done(function (response) {
+        $.ajax(settings).done(function (JSON.stringify(response)) {
           console.log(response);
         });
     },
